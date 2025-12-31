@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brianna's Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>🐥Brianna's Website🐥</h1>
+    <figure>
+        <img src="duckie.png" alt="A duck with a knife" onclick="quack()">
+        <figcaption>Count your days...</figcaption>
+    </figure>
+
+    <section class="duck-facts">
+        <h2>🦆 Duck Facts 🦆</h2>
+        <ul style="list-style: none; padding: 0;">
+            <li>• Ducks judge you silently</li>
+            <li>• This duck knows where you live</li>
+            <li>• Quack is not a suggestion</li>
+        </ul>
+    </section>
+
+    <audio id="quackSound" src="quack.mp3"></audio>
+
+    <script>
+        function quack() {
+            const sound = document.getElementById("quackSound");
+            sound.currentTime = 0;
+            sound.playbackRate = Math.random() * 0.6 + 0.7;
+            sound.play();
+        }
+    </script>
+
+    <footer>
+        &copy; Brianna V. 2026 - Built with ducks and threats.
+    </footer>     
+</body>
+</html>
