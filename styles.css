@@ -6,7 +6,7 @@ body {
     flex-direction: column;
     overflow-x: hidden;
     background: linear-gradient(135deg, #fff7b2, #c7f9cc);
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: "Comic Sans MS", "Comic Sans";
     text-align: center;
     color: #2f3e46;
 }
@@ -131,7 +131,7 @@ footer {
         padding: 16px 10px;
         font-size: 0.85rem;
     }
-    
+
     img:hover {
         transform: none;
     }
